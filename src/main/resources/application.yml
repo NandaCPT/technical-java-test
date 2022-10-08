@@ -1,0 +1,19 @@
+spring: 
+  application:
+    name: upload-images
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?assumeMinServerVersion=9.4
+    username: postgres
+    password: admin
+    
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL81Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  sql:
+    init:
+      mode: never
+
+server:
+  port: 8090
