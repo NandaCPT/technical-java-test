@@ -8,7 +8,28 @@ http://localhost:8090
 ```
 
 # Service dan body
+Add Job Master terlebih dahulu sebelum add Employee
 
+#Job
+1. Add Job (POST)
+```
+http://localhost:8090/job
+```
+
+```
+{
+    "jobCode" : "00A",
+    "jobDesc" : "Job A"
+}
+```
+
+2. Get All Job (GET)
+```
+http://localhost:8090/job?page=0&size=10
+```
+
+
+# Employee
 1. Add Employee (POST)
 ```
 http://localhost:8090/employee
@@ -21,8 +42,8 @@ http://localhost:8090/employee
     "religion" : "ISLAM",
     "email" : "test@mail.com",
     "age" : "24",
-    "birthDate" : "1998-09-06",
-    "jobCode" : "123",
+    "birthDate" : "1998-12-06",
+    "jobCode" : "00A",
     "insertBy" : "IT"
 }
 ```
